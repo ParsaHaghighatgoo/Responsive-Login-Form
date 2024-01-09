@@ -1,59 +1,101 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(to bottom, #4a55a2, #7895cb, #24243e);
-  }
-  
-  form {
-    display: grid;
-    place-items: center;
-    gap: 10px;
-    padding: 20px;
-  }
-  
-  div{
-    display: grid;
-  }
-  
-  .sign-up-title {
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border: 0;
-    margin: 20px;
-  }
-  
-  .sign-up-title label{
-    cursor: pointer;
-  
-  }
-  
-  .container {
-    position: relative;
-    max-height: 55vh;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 5px 5px 20px 8px rgba(0, 0, 0, 0.5);
-  }
-  input {
-    background-color: #e0dede;
-    padding: 10px;
-    border: 1px solid #ccc; 
-    border-radius: 4px;
-    height: 100%;
-    box-sizing: border-box;
-    width: 100%;
-  }
-  
-  .container1{
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-   
-  
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #4a55a2, #7895cb, #24243e);
+}
+
+form {
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+div {
+  display: grid;
+}
+
+.sign-up-title {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 0;
+  margin: 20px;
+}
+
+.sign-up-title label {
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  max-height: 55vh;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 5px 5px 20px 8px rgba(0, 0, 0, 0.5);
+}
+input {
+  background-color: #e0dede;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.container1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.login-title {
+  background-color: #eeeeee;
+  color: #4a55a2;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 0;
+  border-radius: 100%;
+  margin-top: 15px;
+}
+
+.login-title label {
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: #7895cb;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0;
+  width: 90%;
+}
+
+input[type="submit"]:hover {
+  background-color: #4a55a2;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#radioLogin:checked ~ .login-form {
+  transform: translateY(-70%);
+  transition: 0.8s ease-in-out;
+}
+
+.login-form {
+  border-radius: 60% / 10%;
+  transition: 0.8s ease-in-out;
+  background-color: #eeeeee;
+}
+
+.fill {
+  height: 80px;
+  width: 80px;
+}
